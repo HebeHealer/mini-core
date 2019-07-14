@@ -1,0 +1,5 @@
+<!--pages/info/index.wxml-->
+
+<div class="footer">
+  <footer activeIdx='info' auth='{{auth}}'></footer>  
+</div>

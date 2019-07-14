@@ -1,0 +1,21 @@
+<!--pages/user/index.wxml-->
+<view class="container">
+  <!-- 是否已登录 -->
+  <view class="userinfo" wx:if="{{ !hasUserInfo }}" bindtap="getUserInfo">
+    微信登录 {{ hasUserInfo }}
+  </view>
+  <!-- 个人信息 -->
+  <view wx:if="hasUserInfo" class="userinfo">
+    <image class="avatar" src="{{ userInfo.avatarUrl }}"/>
+    <p>{{ userInfo.nickName}}</p>
+  </view>
+  <!-- 列表 -->
+  <div class="userlist">
+    <block wx:for="{{userList}}" wx:key="key" class="block-list">
+      <p class="section">{{ item.name }}</p>
+    </block>
+  </div>
+  <div class="footer">
+    <footer activeIdx='user' auth='{{auth}}'></footer>
+  </div>
+</view>

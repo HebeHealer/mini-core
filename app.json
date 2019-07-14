@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/info/index",
+    "pages/user/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#006cff",
+    "navigationBarTitleText": "码卡多",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "assets/imgs/icon_tabbar.png",
+        "selectedIconPath": "assets/imgs/icon_tabbar.png"
+      },
+      {
+        "pagePath": "pages/info/index",
+        "text": "动态",
+        "iconPath": "assets/imgs/icon_tabbar.png",
+        "selectedIconPath": "assets/imgs/icon_tabbar.png"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "text": "个人中心",
+        "iconPath": "assets/imgs/icon_tabbar.png",
+        "selectedIconPath": "assets/imgs/icon_tabbar.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

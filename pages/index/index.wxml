@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo" wx:if="{{ !hasUserInfo }}" bindtap="getUserInfo">
+    微信登录 {{ hasUserInfo }}
+  </view>
+  {{ userInfo.nickName}}
+  <view wx:if="hasUserInfo">
+  <image src="{{ userInfo.avatarUrl }}"></image>
+  <i-button bind:click="handleClick">登录</i-button>
+  </view>
+  <div class="footer">
+    <footer activeIdx='index' auth='{{auth}}'></footer>
+  </div>
+</view>
